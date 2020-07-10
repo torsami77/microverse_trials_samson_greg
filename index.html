@@ -64,14 +64,10 @@
           </code>
         </div>
         <ul>
-          <li>All Books</li>
-          <li>All Books</li>
-          <li>All Books</li>
-          <li>All Books</li>
-          <li>All Books</li>
+          <li>PS: This route is open to all users</li>
         </ul>
       </section>
-      <section class="main-section" id="Get_by_ID">
+      <section class="main-section" id="Get_Book_by_ID">
         <header>Get Book by ID</header>
         <p><strong>METHOD:</strong> GET </p>
         <p><strong>ROUTE: </strong>api/v1/getById/:id </p>
@@ -85,8 +81,11 @@
                  &nbsp;&nbsp;"pages": 1500,<br/>
                  &nbsp;&nbsp;"date_created": "Fri Jul 10 2020 23:40:24 GMT+0100 (West Africa Standard Time)"<br/>
                  &nbsp;}<br/>
-         
             </code>
+            </div>
+            <ul>
+              <li>PS: This route is open to all users</li>
+            </ul>
       </section>
       <section class="main-section" id="Post_a_Book">
         <header>Post a Book</header>
@@ -100,10 +99,13 @@
                  &nbsp;&nbsp;"title": "Learn Objective C",<br/>
                  &nbsp;&nbsp;"author": "Gregorio Rabago",<br/>
                  &nbsp;&nbsp;"pages": 1500,<br/>
-                 &nbsp;&nbsp;"date_created": "Fri Jul 10 2020 23:40:24 GMT+0100 (West Africa Standard Time)"<br/>
+                 &nbsp;&nbsp;"token": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"<br/>
                  &nbsp;}<br/>
-         
             </code>
+            </div>
+            <ul>
+              <li>PS: This route is accessible by auth users only</li>
+            </ul>
       </section>
       <section class="main-section" id="Update_Book_by_ID">
         <header>Update Book by ID</header>
@@ -116,10 +118,13 @@
                  &nbsp;&nbsp;"title": "Learn Objective C",<br/>
                  &nbsp;&nbsp;"author": "Gregorio Rabago",<br/>
                  &nbsp;&nbsp;"pages": 1500,<br/>
-                 &nbsp;&nbsp;"date_created": "Fri Jul 10 2020 23:40:24 GMT+0100 (West Africa Standard Time)"<br/>
+                 &nbsp;&nbsp;"token": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"<br/>
                  &nbsp;}<br/>
-         
             </code>
+          </div>
+          <ul>
+            <li>PS: This route is accessible by auth users only</li>
+          </ul>
       </section>
       <section class="main-section" id="Delete_Book_by_ID">
         <header>Delete Book by ID</header>
@@ -131,8 +136,11 @@
                &nbsp;{<br/>
               &nbsp;&nbsp;"token": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"<br/>
                  &nbsp;}<br/>
-         
             </code>
+        </div>
+          <ul>
+            <li>PS: This route is accessible by admin users only</li>
+          </ul>
       </section>
     </main>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
