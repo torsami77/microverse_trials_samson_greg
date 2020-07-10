@@ -1,6 +1,8 @@
 # microverse_trials_samson_greg
 
-This is a pair programming exercise done by @torsami77 and @Greg0109 using the freeCodeCamp's responsive web design course project(technical page) example for propectives microverse remote engineers
+This is a pair programming exercise done by @torsami77 and @Greg0109 using the freeCodeCamp's responsive web design course project(technical page) example for propectives microverse remote engineers.
+
+[see page](https://torsami77.github.io/microverse_trials_samson_greg/)
 
 # FCC Test Suite Template
 
