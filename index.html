@@ -2,24 +2,36 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Fork Me! FCC: Test Suite Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookStore API </title>
+      <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
-  </head>
-  <style>
-    @media screen and (max-height: 600px) {
-      body {
-        background-color: lightgrey;
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <style>
+      @media only screen and (max-width: 900px) {
+        #navbar, #navbar > ul > a {
+          width: 100% !important;
+        }
+
+        #main-doc{
+          margin-top: 10%;
+          width: 100% !important;
+        }
       }
-    }
-    </style>
+      </style>
+  </head>
+  
 
   <body>
     <nav id="navbar">
-      <header>BookStore API </header>
+      <header><span class="material-icons">
+        menu_book
+        </span> BookStore API </header>
       <strong>Documentation Page</strong>
       <ul>
         <a class="nav-link" href="#Get_all_Books">Get all Books</a><br>
-        <a class="nav-link" href="#Get_by_ID">Get by ID</a><br>
+        <a class="nav-link" href="#Get_Book_by_ID">Get Book by ID</a><br>
         <a class="nav-link" href="#Post_a_Book">Post a Book</a><br>
         <a class="nav-link" href="#Update_Book_by_ID">Update Book by ID</a><br>
         <a class="nav-link" href="#Delete_Book_by_ID">Delete Book by ID</a>
@@ -28,11 +40,29 @@
     <main id="main-doc">
       <section class="main-section" id="Get_all_Books">
         <header>Get all Books</header>
-        <p>elements should contain at least 10 p elements total </p>
-        <p>elements should contain at least 10 p elements total </p>
-        <code>
-            let string = 'Hello World';
-        </code>
+        <p><strong>METHOD:</strong> GET </p>
+        <p><strong>ROUTE: </strong>api/v1/getAll </p>
+        <strong>Sample Data</strong><br/>
+        <div class="code">
+          <code>
+            [<br/>
+            &nbsp;{<br/>
+            &nbsp;&nbsp;"id": 1<br/>
+             &nbsp;&nbsp;"title": "How to teach programming",<br/>
+             &nbsp;&nbsp;"author": "Samson Samuel",<br/>
+             &nbsp;&nbsp;"pages": 250,<br/>
+             &nbsp;&nbsp;"date_created": "Fri Jul 10 2020 23:40:24 GMT+0100 (West Africa Standard Time)"<br/>
+             &nbsp;},<br/>
+             &nbsp;{<br/>
+              &nbsp;&nbsp;"id": 2<br/>
+               &nbsp;&nbsp;"title": "Learn Objective C",<br/>
+               &nbsp;&nbsp;"author": "Gregorio Rabago",<br/>
+               &nbsp;&nbsp;"pages": 1500,<br/>
+               &nbsp;&nbsp;"date_created": "Fri Jul 10 2020 23:40:24 GMT+0100 (West Africa Standard Time)"<br/>
+               &nbsp;}<br/>
+            ]
+          </code>
+        </div>
         <ul>
           <li>All Books</li>
           <li>All Books</li>
@@ -42,36 +72,67 @@
         </ul>
       </section>
       <section class="main-section" id="Get_by_ID">
-        <header>Get by ID</header>
-        <p>elements should contain at least 10 p elements total </p>
-        <p>elements should contain at least 10 p elements total </p>
-        <code>
-            let string = 'Hello World';
-        </code>
+        <header>Get Book by ID</header>
+        <p><strong>METHOD:</strong> GET </p>
+        <p><strong>ROUTE: </strong>api/v1/getById/:id </p>
+        <strong>Sample Data</strong><br/>
+        <div class="code">
+            <code>
+               &nbsp;{<br/>
+                &nbsp;&nbsp;"id": 2<br/>
+                 &nbsp;&nbsp;"title": "Learn Objective C",<br/>
+                 &nbsp;&nbsp;"author": "Gregorio Rabago",<br/>
+                 &nbsp;&nbsp;"pages": 1500,<br/>
+                 &nbsp;&nbsp;"date_created": "Fri Jul 10 2020 23:40:24 GMT+0100 (West Africa Standard Time)"<br/>
+                 &nbsp;}<br/>
+         
+            </code>
       </section>
       <section class="main-section" id="Post_a_Book">
         <header>Post a Book</header>
-        <p>elements should contain at least 10 p elements total </p>
-        <p>elements should contain at least 10 p elements total </p>
-        <code>
-            let string = 'Hello World';
-        </code>
+        <p><strong>METHOD:</strong> POST </p>
+        <p><strong>ROUTE: </strong>api/v1/postABook </p>
+        <strong>Sample Data</strong><br/>
+        <div class="code">
+            <code>
+               &nbsp;{<br/>
+                &nbsp;&nbsp;"id": 2<br/>
+                 &nbsp;&nbsp;"title": "Learn Objective C",<br/>
+                 &nbsp;&nbsp;"author": "Gregorio Rabago",<br/>
+                 &nbsp;&nbsp;"pages": 1500,<br/>
+                 &nbsp;&nbsp;"date_created": "Fri Jul 10 2020 23:40:24 GMT+0100 (West Africa Standard Time)"<br/>
+                 &nbsp;}<br/>
+         
+            </code>
       </section>
       <section class="main-section" id="Update_Book_by_ID">
         <header>Update Book by ID</header>
-        <p>elements should contain at least 10 p elements total </p>
-        <p>elements should contain at least 10 p elements total </p>
-        <code>
-            let string = 'Hello World';
-        </code>
+        <p><strong>METHOD:</strong> PUT </p>
+        <p><strong>ROUTE: </strong>api/v1/updateBook/:id </p>
+        <strong>Sample Data</strong><br/>
+        <div class="code">
+            <code>
+               &nbsp;{<br/>
+                 &nbsp;&nbsp;"title": "Learn Objective C",<br/>
+                 &nbsp;&nbsp;"author": "Gregorio Rabago",<br/>
+                 &nbsp;&nbsp;"pages": 1500,<br/>
+                 &nbsp;&nbsp;"date_created": "Fri Jul 10 2020 23:40:24 GMT+0100 (West Africa Standard Time)"<br/>
+                 &nbsp;}<br/>
+         
+            </code>
       </section>
       <section class="main-section" id="Delete_Book_by_ID">
         <header>Delete Book by ID</header>
-        <p>elements should contain at least 10 p elements total </p>
-        <p>elements should contain at least 10 p elements total </p>
-        <code>
-            let string = 'Hello World';
-        </code>
+        <p><strong>METHOD:</strong> DELETE </p>
+        <p><strong>ROUTE: </strong>api/v1/deleteBook/:id </p>
+        <strong>Sample Data</strong><br/>
+        <div class="code">
+            <code>
+               &nbsp;{<br/>
+              &nbsp;&nbsp;"token": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"<br/>
+                 &nbsp;}<br/>
+         
+            </code>
       </section>
     </main>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>

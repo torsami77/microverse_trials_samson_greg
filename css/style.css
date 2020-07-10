@@ -2,14 +2,13 @@ header {
     font-size: 35px;
     font-weight: bolder;
     font-family: 'Courier New', Courier, monospace;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
 }
 
 #navbar {
-    width: 400px;
+    width: 500px;
     float: left;
     max-height: 100%;
-    border-right: 2px solid black;
 }
 
 #navbar > ul {
@@ -27,14 +26,49 @@ header {
     margin-top: 0px;
     margin-bottom: 0px;
     color: black;
-    background-color: lightgrey;
+    background-color: lightgray;
+    text-align: center;
 }
 
 #navbar > ul > a:hover {
-    color: gray;
+    color: white;
+    background-color: darkgray;
 }
 
 #main-doc {
-    width: 73%;
-    float: right;
+    width: 50%;
+    float: left;
+    border-left: 2px solid black;
+    padding-left: 40px;
+    padding-bottom: 40px;
+}
+
+section {
+    margin-top: 30px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid black;
+}
+
+p {
+    font-size: 20px;
+}
+
+code {
+    font-family: Consolas,"courier new";
+    color: crimson;
+    background-color: #f1f1f1;
+    padding: 2px;
+    font-size: 105%;
+  }
+
+.code {
+    background-color: #f1f1f1;
+    padding: 10px 10px;
+}
+
+.material-icons {
+    float: left;
+    margin-right: 10px;
+    font-size: 45px !important;
 }
